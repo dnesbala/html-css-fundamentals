@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Name" required />
+      </div>
+
+      <div>
+        Phone Number
+        <input type="number" placeholder="Phone" />
+      </div>
+
+      <div>
+        Password
+        <input type="password" required />
+      </div>
+
+      <!-- Radio Buttons -->
+      <div>
+        Gender
+        <input type="radio" id="male" name="gender" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label>
+      </div>
+
+      <!-- Checkbox -->
+      <div>
+        Coding Skills
+        <input type="checkbox" /> HTML <input type="checkbox" /> CSS
+        <input type="checkbox" /> JavaScript <input type="checkbox" /> Flutter
+        <input type="checkbox" /> Python
+      </div>
+
+      <!-- Dropdown -->
+      <div>
+        Country
+        <select>
+          <option value="nepal">Nepal</option>
+          <option value="usa" disabled>USA</option>
+          <option value="india">India</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Add Details" />
+    </form>
+  </body>
+</html>

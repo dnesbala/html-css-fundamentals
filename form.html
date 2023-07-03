@@ -6,20 +6,20 @@
     <title>Form</title>
   </head>
   <body>
-    <form>
+    <form method="POST" action="action.php">
       <div>
         <label for="name">Name</label>
-        <input id="name" type="text" placeholder="Name" required />
+        <input id="name" type="text" placeholder="Name" required name="name" />
       </div>
 
       <div>
         Phone Number
-        <input type="number" placeholder="Phone" />
+        <input type="number" placeholder="Phone" name="phone" />
       </div>
 
       <div>
         Password
-        <input type="password" required />
+        <input type="password" required name="password" />
       </div>
 
       <!-- Radio Buttons -->

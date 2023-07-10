@@ -13,21 +13,40 @@
     />
 
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       body {
         background-color: antiquewhite;
         font-family: "Poppins", sans-serif;
       }
 
-      p {
+      p,
+      h1 {
         font-size: 50px;
         font-weight: bold;
         color: #b41daf;
         text-transform: uppercase;
         text-align: center;
-        text-decoration: underline;
+        /* text-decoration: underline; */
         background-color: grey;
         height: 200px;
         width: 70%;
+      }
+
+      h1 {
+        color: green;
+      }
+
+      p:first-letter {
+        font-size: 100px;
+      }
+
+      p:first-line {
+        color: teal;
       }
 
       /* #para {
@@ -42,8 +61,8 @@
 
         padding: 10px;
 
-        /* display: inline-block;
-        height: 60px;
+        /* display: inline-block; */
+        /* height: 60px;
         width: 80px; */
       }
 
@@ -66,22 +85,61 @@
         list-style-type: none;
       }
 
-      .box {
+      /* .box {
         background-color: cadetblue;
-        height: 200px;
-        width: 200px;
+        height: 100px;
+        width: 100px; */
 
-        /* border-width: 20px;
+      /* border-width: 20px;
         border-style: solid;
         border-color: black; */
-        border: 20px solid black;
-        padding-left: 50px;
-        margin: 80px;
+      /* border: 5px solid black;
+        padding-left: 30px; */
+      /* padding-left: 50px;
+        padding-top: 100px;
+        margin-top: 100px; */
+
+      /* margin: 50px; */
+      /* } */
+
+      .box {
+        height: 500px;
+        width: 400px;
+        background-color: teal;
+        margin: 100px auto;
+        position: relative;
+        box-shadow: 3px 5px 1px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      .avatar-img {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        border-radius: 50%;
+        /* margin-left: -50px; */
+        transform: translate(-50%, 0);
+      }
+
+      .personal-info {
+        padding-left: 20px;
+        padding-top: 70px;
+      }
+
+      .fb-icon {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: 50%;
+        left: -25px;
+        transform: translate(0, -50%);
       }
     </style>
   </head>
   <body>
-    <p id="para">This is paragraph</p>
+    <!-- <p id="para">This is paragraph Lorem ipsum</p>
+    <h1>Heading 1</h1>
     <a href="#">Link</a>
 
     <ul>
@@ -89,10 +147,32 @@
       <li>Item 2</li>
       <li>Item 3</li>
       <li>Item 4</li>
-    </ul>
+    </ul> -->
 
     <div class="box">
-      <span>TEXT</span>
+      <img
+        src="https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
+        alt="Avatar"
+        class="avatar-img"
+      />
+      <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+      <svg
+        class="fb-icon"
+        fill="#000000"
+        width="800px"
+        height="800px"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"
+        />
+      </svg>
+      <div class="personal-info">
+        <h4>Name: Test Test2</h4>
+        <h4>Address: Test</h4>
+        <h4>Phone: 9805606500</h4>
+      </div>
     </div>
   </body>
 </html>

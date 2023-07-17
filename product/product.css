@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #b8ae97;
+}
+
+.product-card {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  width: 80vw;
+  margin: 100px auto;
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.product-img {
+  width: 35%;
+}
+
+.product-name {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.product-tag {
+  background-color: #b8ae97;
+  padding: 4px 8px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.product-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.discounted-price {
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #aaa;
+}

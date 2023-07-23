@@ -106,48 +106,51 @@ body {
   border: 2px solid #000;
 }
 
-.colors {
-  display: flex;
-  gap: 16px;
+.color-section {
+  margin-bottom: 18px;
 }
 
 .outer-circle {
-  height: 45px;
-  width: 45px;
-  background-color: #fff;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
+  background-color: #fff;
   border: 2px solid grey;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .inner-circle {
-  height: 35px;
-  width: 35px;
-  background-color: teal;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
+  background-color: indigo;
+}
+
+.colors {
+  display: flex;
+  gap: 12px;
 }
 
 .teal-color {
   background-color: teal;
 }
 
-.black-color {
-  background-color: #000;
+.red-color {
+  background-color: red;
 }
 
-.grey-color {
-  background-color: #aaa;
+.btn {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  padding: 12px 24px;
+  width: 170px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-/* @media screen and (max-width: 850px) {
-  .product-card {
-    flex-direction: column;
-  }
-
-  .product-img {
-    width: 100%;
-  }
-} */
+.btn:hover {
+  border: 1px solid #000;
+}

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  background-color: orange;
+  padding: 24px;
+}
+
+.box-container {
+  background-color: antiquewhite;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 200px 200px 100px;
+  grid-template-rows: 100px 100px 200px;
+  justify-content: center;
+  align-content: center;
+
+  /* align-items: center; */
+  /* justify-items: end; */
+}
+
+.box-1 {
+  /* grid-column: 1 / 4; */
+  grid-column: 1 / span 2;
+}
+
+.box-2 {
+  grid-row: 2/4;
+}

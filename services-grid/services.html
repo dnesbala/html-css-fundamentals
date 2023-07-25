@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=REM:wght@400;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "REM", sans-serif;
+      }
+
+      body {
+        background-color: #ddd;
+      }
+
+      .service-title {
+        text-align: center;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        margin-top: 16px;
+      }
+
+      .services {
+        width: 80vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: 250px 250px; */
+        column-gap: 10px;
+        row-gap: 18px;
+      }
+
+      .service-box {
+        background-color: #fff;
+        text-align: center;
+        padding: 36px 24px;
+        border-radius: 12px;
+        box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .service-box h4 {
+        font-size: 24px;
+        margin: 16px 0px;
+      }
+
+      .service-box p {
+        color: #777;
+        line-height: 1.4;
+      }
+
+      .icon {
+        font-size: 50px;
+        color: #2077be;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="service-title">What We Do?</h1>
+    <div class="services">
+      <div class="service-box">
+        <ion-icon name="bar-chart-outline" class="icon"></ion-icon>
+        <h4>Market Analysis</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam qui,
+          ipsum quis eius commodi a.
+        </p>
+      </div>
+      <div class="service-box">
+        <ion-icon name="card-outline" class="icon"></ion-icon>
+        <h4>Funds Management</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam qui,
+          ipsum quis eius commodi a.
+        </p>
+      </div>
+      <div class="service-box">
+        <ion-icon name="pie-chart-outline" class="icon"></ion-icon>
+        <h4>PR & Marketing</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam qui,
+          ipsum quis eius commodi a.
+        </p>
+      </div>
+      <div class="service-box">
+        <ion-icon name="list-outline" class="icon"></ion-icon>
+        <h4>Business Planning</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam qui,
+          ipsum quis eius commodi a.
+        </p>
+      </div>
+      <div class="service-box">
+        <ion-icon name="search-outline" class="icon"></ion-icon>
+        <h4>Audit</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam qui,
+          ipsum quis eius commodi a.
+        </p>
+      </div>
+      <div class="service-box">
+        <ion-icon name="chatbubble-ellipses-outline" class="icon"></ion-icon>
+        <h4>Consulting</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam qui,
+          ipsum quis eius commodi a.
+        </p>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -84,7 +84,7 @@ body {
 
 .size-list {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .size-list li {
@@ -149,8 +149,23 @@ body {
   width: 170px;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn:hover {
   border: 1px solid #000;
+}
+
+@media (max-width: 800px) {
+  /* body {
+    background-color: teal;
+  } */
+
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-img {
+    width: 100%;
+  }
 }

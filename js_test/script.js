@@ -19,6 +19,23 @@ if (age > 18) {
   document.write("YOU CANNOT VOTE");
 }
 
-for(let i =1; i<=10; i++) {
-    document.write("");
+for (let i = 1; i <= 10; i++) {
+  document.write(i);
 }
+
+function add(x, y) {
+  document.write(`<br/> Sum = ${x + y}`);
+}
+
+add(10, 15);
+add(20, 20);
+add(1, 2);
+
+// function product(x, y) {
+//   return x * y;
+// }
+
+const product = (x, y) => x * y;
+
+var result = product(2, 5);
+document.write(`product = ${result}`);

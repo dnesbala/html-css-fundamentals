@@ -39,6 +39,14 @@
         width: 100%;
       }
 
+      #operators {
+        padding: 12px 16px;
+        margin-bottom: 16px;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+      }
+
       #sum-result {
         margin-top: 16px;
         text-align: center;
@@ -51,6 +59,15 @@
     <h2>Calculator</h2>
     <form>
       <input type="number" placeholder="Number 1" id="num1-input" />
+
+      <select name="operators" id="operators">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="product">*</option>
+        <option value="division">/</option>
+        <option value="modulo">%</option>
+      </select>
+
       <input type="number" placeholder="Number 2" id="num2-input" />
       <input
         onclick="calculate(); return false;"
@@ -63,18 +80,19 @@
   </body>
 
   <script>
-    const num1Input = document.getElementById("num1-input");
-    const num2Input = document.getElementById("num2-input");
-    const sumResultElement = document.getElementById("sum-result");
-
-    console.log(num1Input);
+    var num1Input = document.getElementById("num1-input");
+    var num2Input = document.getElementById("num2-input");
+    var sumResult = document.getElementById("sum-result");
+    var operatorsDropdown = document.getElementById("operators");
 
     function calculate() {
-      const num1 = Number(num1Input.value);
-      const num2 = Number(num2Input.value);
+      var num1 = Number(num1Input.value);
+      var num2 = Number(num2Input.value);
+      var operator = operatorsDropdown.value;
+      console.log(operator);
 
-      // document.write(`Sum = ${num1 + num2}`);
-      sumResultElement.innerHTML = `Sum = ${num1 + num2}`;
+      var sum = num1 + num2;
+      sumResult.innerText = `Sum = ${sum}`;
     }
   </script>
 

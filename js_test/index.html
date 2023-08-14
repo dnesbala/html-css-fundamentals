@@ -90,9 +90,42 @@
       var num2 = Number(num2Input.value);
       var operator = operatorsDropdown.value;
       console.log(operator);
+      var result = 0;
 
-      var sum = num1 + num2;
-      sumResult.innerText = `Sum = ${sum}`;
+      // if (operator == "add") {
+      //   result = num1 + num2;
+      // } else if (operator == "subtract") {
+      //   result = num1 - num2;
+      // } else if (operator == "product") {
+      //   result = num1 * num2;
+      // } else if (operator == "division") {
+      //   result = num1 / num2;
+      // } else if (operator == "modulo") {
+      //   result = num1 % num2;
+      // }
+
+      switch (operator) {
+        case "add":
+          result = num1 + num2;
+          break;
+        case "subtract":
+          result = num1 - num2;
+          break;
+        case "product":
+          result = num1 * num2;
+          break;
+        case "division":
+          result = num1 / num2;
+          break;
+        case "modulo":
+          result = num1 % num2;
+          break;
+        default:
+          result = num1 + num2;
+          break;
+      }
+
+      sumResult.innerText = `Result = ${result}`;
     }
   </script>
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lights Bulb</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bulb-img {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 50px;
+      }
+
+      #toggle-btn {
+        padding: 12px 16px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="bulb-img" id="bulb-img" src="bulb_off.png" alt="" />
+    <button onclick="toggleLight();" id="toggle-btn">Turn ON light</button>
+
+    <script>
+      function toggleLight() {
+        var image = document.getElementById("bulb-img");
+        console.log(image.src);
+        var toggleBtn = document.getElementById("toggle-btn");
+
+        if (image.src.match("off")) {
+          // If light is OFF
+          image.src = "bulb_on.jpg";
+          toggleBtn.innerText = "Turn OFF light";
+        } else {
+          // If light is ON
+          image.src = "bulb_off.png";
+          toggleBtn.innerText = "Turn ON light";
+        }
+      }
+    </script>
+  </body>
+</html>

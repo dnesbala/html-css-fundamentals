@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+
+  <body>
+    <form>
+      <input type="text" placeholder="Email" id="email-input" />
+      <input type="text" placeholder="Password" id="password-input" />
+      <input type="text" placeholder="Confirm Password" id="cpassword-input" />
+      <input type="submit" value="Sign up" id="sign-up-btn" />
+    </form>
+
+    <p id="validation-msg"></p>
+
+    <script>
+      var emailInput = document.getElementById("email-input");
+      var passwordInput = document.getElementById("password-input");
+      var cPasswordInput = document.getElementById("cpassword-input");
+      var signUpButton = document.getElementById("sign-up-btn");
+      var validationMsg = document.getElementById("validation-msg");
+
+      signUpButton.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        console.log(emailInput.value);
+        console.log(passwordInput.value);
+        console.log(cPasswordInput.value);
+
+        //email is empty
+        if (emailInput.value.length == 0) {
+          validationMsg.innerText = "Email is required";
+        }
+        
+      });
+    </script>
+  </body>
+</html>
